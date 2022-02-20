@@ -1,0 +1,8 @@
+name: CityCraft-Jail
+version: '${project.version}'
+main: com.chilieutenant.handcuff.main
+api-version: 1.16
+commands:
+  jail:
+  handcuffs:
+  unhandcuff:
