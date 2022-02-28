@@ -136,6 +136,9 @@ public class HandcuffedPlayer {
         for(String s : Config.getConfig().getStringList("handcuff.location")) {
             locs.add(JailMethods.getLocationString(s));
         }
+        if(!handcuffer.hasPermission("jail.jail")){
+            return;
+        }
         for(Location loc : locs) {
             if (player.getLocation().distance(loc) < 1.5) {
                 normalJail();
